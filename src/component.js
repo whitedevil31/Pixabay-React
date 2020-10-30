@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import AddIcon from "@material-ui/icons/Add";
+import RemoveRoundedIcon from "@material-ui/icons/RemoveRounded";
 import "./App.css";
 
 const Component = ({ title, info }) => {
@@ -18,7 +19,7 @@ const Component = ({ title, info }) => {
       </div>
       <div className="button">
         <button id="btn" onClick={titleFunc}>
-          <AddIcon />
+          {showtitle ? <AddIcon /> : <RemoveRoundedIcon />}
         </button>
       </div>
     </div>
