@@ -5,15 +5,22 @@ import "./App.css";
 
 const Component = ({ title, info }) => {
   const [showinfo, setInfo] = useState(false);
+  const [showtitle, settitle] = useState(true);
+  function titleFunc() {
+    setInfo(!showinfo);
+    settitle(!showtitle);
+  }
   return (
     <div className="container">
       <div className="section">
-        <h4>{title}</h4>
-        <button className="btn" onClick={() => setInfo(!showinfo)}>
+        {showtitle && <h4>{title}</h4>}
+        {showinfo && <p>{info}</p>}
+      </div>
+      <div className="button">
+        <button id="btn" onClick={titleFunc}>
           <AddIcon />
         </button>
       </div>
-      {showinfo && <p>{info}</p>}
     </div>
   );
 };
