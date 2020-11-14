@@ -3,7 +3,8 @@
   padding: 0;
 }
 .body {
-  background-image: url("https://www.wallpapertip.com/wmimgs/66-660139_black-glass-wallpaper.jpg");
+  /* background-image: url("https://www.wallpapertip.com/wmimgs/66-660139_black-glass-wallpaper.jpg"); */
+  background-color: lightgrey;
   display: flex;
   flex-direction: column;
   min-width: 100vw;
