@@ -4,13 +4,17 @@ import Component from "./Component";
 
 function App() {
   return (
-    <div className="container">
-      <h2>Questions and Answers about login</h2>
-      <button> CLICK</button>
-      {/* {questions.map((question) => {
-        return <Component key={question.id} {...question}></Component>;
-      })} */}
+    <div className=" border-red-800 border-4 container mx-auto flex  flex-col h-screen items-center ">
+      <h1>helo</h1>
+      <div className="border-blue-500 border-2 container mx-250px">
+        {" "}
+        <h1>enna </h1>
+      </div>
     </div>
+
+    // {/* {questions.map((question) => {
+    //   return <Component key={question.id} {...question}></Component>;
+    // })} */}
   );
 }
 
