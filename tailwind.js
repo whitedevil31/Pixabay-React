@@ -11,7 +11,7 @@ module.exports = {
   presets: [],
   theme: {
     height: {
-      "10v": "10vh",
+      "10v": "100px",
       "20v": "20vh",
       "30v": "30vh",
       "40v": "40vh",
