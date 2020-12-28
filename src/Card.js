@@ -2,7 +2,7 @@ import React from "react";
 const Card = (props) => {
   const tags = props.image.tags.split(",");
   return (
-    <div className="max-w-sm overflow-hidden rounded shadow-lg">
+    <div className="max-w-sm overflow-hidden rounded shadow-lg ">
       <img src={props.image.webformatURL} className="w-full" />
       <div className="px-5 py-5 ">
         <p>Photo by:</p>
@@ -22,7 +22,7 @@ const Card = (props) => {
           </li>
         </ul>
       </div>
-      <div className="px-3 py-5 flex justify-evenly">
+      <div className="px-3 py-5  flex justify-evenly">
         {tags.map((data, index) => (
           <span
             key={index}

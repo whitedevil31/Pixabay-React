@@ -30,7 +30,7 @@ function App() {
           No results found !
         </h1>
       )}
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-1  sm:grid-cols-2 gap-2 md:grid-cols-2 gap-3 xl:grid-cols-3 gap-4  lg:grid-cols-3 gap-3">
         {images.map((data) => (
           <Card key={data.id} image={data} />
         ))}
