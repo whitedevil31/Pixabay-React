@@ -3,8 +3,8 @@ import questions from "./data";
 import Component from "./Component";
 import Card from "./Card";
 import Search from "./Search";
-
-function App() {
+import Comp from "./Comp";
+function App(props) {
   const [images, setImages] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -22,6 +22,8 @@ function App() {
       })
       .catch((e) => console.log(e));
   }, [searchTerm]);
+  const dell = 56;
+
   return (
     <div className="container mx-auto">
       <Search searchText={(text) => setSearchTerm(text)} />
