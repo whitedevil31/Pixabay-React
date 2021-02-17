@@ -3,6 +3,7 @@ import questions from "./data";
 import Component from "./Component";
 import Card from "./Card";
 import Search from "./Search";
+import Download from "./Download";
 import Comp from "./Comp";
 function App(props) {
   const [images, setImages] = useState([]);
@@ -17,6 +18,7 @@ function App(props) {
       .then((res) => res.json())
       .then((data) => {
         setImages(data.hits);
+        console.log(data.hits);
 
         setLoading(false);
       })
