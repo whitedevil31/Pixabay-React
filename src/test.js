@@ -7,7 +7,7 @@ const Test = () => {
   const onSubmitHandler = (e) => {
     e.preventDefault();
     const data = { name: username, userage: age };
-    console.log(data);
+    // console.log(data);
   };
   return (
     <form onSubmit={onSubmitHandler}>

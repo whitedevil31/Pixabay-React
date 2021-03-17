@@ -19,7 +19,6 @@ function App(props) {
       .then((res) => res.json())
       .then((data) => {
         setImages(data.hits);
-        console.log(data.hits);
 
         setLoading(false);
       })

@@ -1,6 +1,4 @@
 const Download = (URL) => {
-  console.log(URL);
-  // console.log(e.target.href);
   fetch(URL, {
     method: "GET",
     headers: {},
