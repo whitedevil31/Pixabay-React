@@ -6,11 +6,13 @@ const Card = (props) => {
     <div className="max-w-sm overflow-hidden rounded shadow-lg ">
       <img src={props.image.webformatURL} className="w-full" />
       <div className="px-5 pt-5 flex justify-center flex-col">
-        <p>Photo by:</p>
-        <div className="font-bold text-blue-500 text-xl flex justify-center">
-          {props.image.user}
+        <div className="flex justify-center items-center ">
+          <div className="font-bold text-blue-500 text-xl flex justify-center">
+            {props.image.user}
+          </div>
         </div>
-        <ul>
+
+        <ul className="mb-3  mt-3 py-2">
           <li>
             <strong>Views :</strong>
             {props.image.views}
@@ -18,7 +20,7 @@ const Card = (props) => {
           <strong>Downloads :</strong>
           {props.image.downloads}
           <li>
-            <strong>Likes :</strong>
+            <strong c>Likes :</strong>
             {props.image.likes}
           </li>
           {/* <li>
